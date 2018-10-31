@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1B354D0-01D4-4464-A744-4DC436051F86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Karyna_Make_Up</RootNamespace>
+    <AssemblyName>Karyna_Make_Up</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Oshin\Desktop\Programação\Faculdade\4_Período\PIN\Projeto_Kmkp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://sites.google.com/view/washin/p%25C3%25A1gina-inicial%3fauthuser=1/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>53CB1533FF52BC241E1037527E5F543AB2E39186</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Karyna_Make_Up_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="epraja_projectDataSet.cs">
+      <DependentUpon>epraja_projectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="epraja_projectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>epraja_projectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="epraja_projectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>epraja_projectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="F_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Clientes.Designer.cs">
+      <DependentUpon>F_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Marcas.Designer.cs">
+      <DependentUpon>F_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Menu.Designer.cs">
+      <DependentUpon>F_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Produtos.Designer.cs">
+      <DependentUpon>F_Produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs" />
+    <Compile Include="Produtos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="PROJETOSDataSet.cs">
+      <DependentUpon>PROJETOSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJETOSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJETOSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLExceptions.cs" />
+    <EmbeddedResource Include="F_Clientes.resx">
+      <DependentUpon>F_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Marcas.resx">
+      <DependentUpon>F_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Menu.resx">
+      <DependentUpon>F_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Produtos.resx">
+      <DependentUpon>F_Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="epraja_projectDataSet.xsc">
+      <DependentUpon>epraja_projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="epraja_projectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>epraja_projectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="epraja_projectDataSet.xss">
+      <DependentUpon>epraja_projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="epraja_projectDataSet1.xsc">
+      <DependentUpon>epraja_projectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="epraja_projectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>epraja_projectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="epraja_projectDataSet1.xss">
+      <DependentUpon>epraja_projectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Karyna_Make_Up_TemporaryKey.pfx" />
+    <None Include="PROJETOSDataSet.xsc">
+      <DependentUpon>PROJETOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PROJETOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJETOSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>PROJETOSDataSet</CustomToolNamespace>
+    </None>
+    <None Include="PROJETOSDataSet.xss">
+      <DependentUpon>PROJETOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_button1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar_button.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painel_principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
